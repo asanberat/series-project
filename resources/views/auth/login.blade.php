@@ -1,14 +1,21 @@
-@extends('layouts.app')
-
+@extends('Front.layouts.Master')
+@section('title')
+    Diziease
+@endsection
 @section('content')
-<div class="container">
+
+    <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+                    @if($errors->any())
+                        <div class="alert alert-success">
+                            {{$errors->first}}
+                        </div>
+                    @endif
+                    <form method="POST" action="{{route('loginPost') }}">
                         @csrf
 
                         <div class="form-group row">

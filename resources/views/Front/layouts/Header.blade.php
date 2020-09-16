@@ -42,12 +42,7 @@
                     <a class="nav-link" href="https://kreator.com.tr/">Hakkımızda</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('mlogin')}}">logın </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('mlogin')}}">logout </a>
-                </li>
+
             </ul>
         </div>
     </div>
